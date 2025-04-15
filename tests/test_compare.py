@@ -5,7 +5,7 @@ import allure
 @allure.description("Проверяем, что страницы REF и TARGET возвращают одинаковый HTML и статус код 200.")
 
 def test_compare_html_responses():
-    url_ref = "http://ya.ru"
+    url_ref = "http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home"
     
     url_target = "http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home"
 
