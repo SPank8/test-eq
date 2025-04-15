@@ -1,7 +1,7 @@
 import requests
 
 def test_compare_html_responses():
-    # Отправляем GET-запрос (можно заменить на POST, если надо)
+    
     ref = requests.get("http://webtours.load-test.ru:1080/cgi-bin/nav.pl?in=home")
     target = requests.get("http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home")
 
