@@ -39,7 +39,7 @@ jobs:
 <<<<<<< HEAD
         uses: actions/upload-artifact@v3
 =======
-        uses: actions/upload-artifact@v3   # <== вот это важно!
+        uses: actions/upload-artifact@v4   # <== вот это важно!
 >>>>>>> 8ff1e96b65f88025e472cd08605b5577ac4b0889
         with:
           name: allure-report
