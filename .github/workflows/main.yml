@@ -34,4 +34,3 @@ jobs:
           allure_results: allure-results
           allure_report: allure-report
           gh_pages: gh-pages
-          github_token: ${{ secrets.GH_TOKEN }}
