@@ -38,7 +38,7 @@ jobs:
           gh_pages: gh-pages
           allure_history: allure-history
           keep_reports: 20
-          subfolder: false   # <--- Вот это добавь
+          subfolder: false  # <-- ВАЖНО!
           github_run_num: ${{ github.run_number }}
           github_run_id: ${{ github.run_id }}
           github_repo: ${{ github.repository }}
