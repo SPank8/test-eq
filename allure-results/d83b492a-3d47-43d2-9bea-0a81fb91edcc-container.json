@@ -1,1 +1,0 @@
-{"uuid": "96955601-33c4-4e46-a48e-7d6de5371f92", "children": ["e77e93de-0ae9-4415-b944-bd509138b444"], "befores": [{"name": "django_test_environment", "status": "passed", "start": 1744716838287, "stop": 1744716838287}], "start": 1744716838286, "stop": 1744716838531}

@@ -1,1 +1,0 @@
-{"uuid": "60d7e8ff-3529-4859-9e06-3a23292be199", "children": ["d2556d70-73c2-4abc-a566-4799b5e4070f"], "befores": [{"name": "django_db_blocker", "status": "passed", "start": 1744725304937, "stop": 1744725304937}], "start": 1744725304937, "stop": 1744725306071}

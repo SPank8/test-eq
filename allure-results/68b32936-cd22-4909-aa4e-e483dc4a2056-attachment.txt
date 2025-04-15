@@ -1,3 +1,0 @@
-
-[Test 1] REF (http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home) -> 200
-[Test 1] TARGET (http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home) -> 200
