@@ -23,3 +23,5 @@ def test_compare_html_responses():
             allure.attach(ref.text, name="REF (diff)", attachment_type=allure.attachment_type.TEXT)
             allure.attach(target.text, name="TARGET (diff)", attachment_type=allure.attachment_type.TEXT)
         assert ref.text == target.text, "HTML ответы отличаются!"
+        
+        
