@@ -4,8 +4,8 @@ from deepdiff import DeepDiff
 def test_compare_responses():
     payload = {"example": "data"}
 
-    ref = requests.post("http://webtours.load-test.ru:1080/cgi-bin/nav.pl?in=home", json=payload)
-    target = requests.post("http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home", json=payload)
+    ref = requests.get("http://webtours.load-test.ru:1080/cgi-bin/nav.pl?in=home")
+    target = requests.get("http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home")
 
     assert ref.status_code == 200, f"Reference API returned {ref.status_code}"
     assert target.status_code == 200, f"Target API returned {target.status_code}"
