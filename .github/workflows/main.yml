@@ -35,9 +35,3 @@ jobs:
           allure_results: allure-results
           allure_report: allure-report
           keep_reports: 5
-  
-      - name: Upload Allure report as artifact
-        uses: actions/upload-artifact@v3
-        with:
-          name: allure-report
-          path: allure-report
