@@ -6,7 +6,7 @@ import allure
 
 def test_compare_html_responses():
     url_ref = "http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home"
-    url_target = "http://google.com"
+    url_target = "http://webtours.load-test.ru:1090/cgi-bin/nav.pl?in=home"
 
     with allure.step(f"GET запрос к REF: {url_ref}"):
         ref = requests.get(url_ref)
