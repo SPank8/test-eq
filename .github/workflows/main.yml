@@ -36,7 +36,7 @@ jobs:
           keep_reports: 5
 
       - name: Upload Allure report as artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v3   # <== вот это важно!
         with:
           name: allure-report
           path: allure-report
