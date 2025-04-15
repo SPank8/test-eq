@@ -28,8 +28,10 @@ jobs:
           pytest --alluredir=allure-results
 
       - name: Generate Allure report  
-        run: |
-          allure serve allure-results    
+        with:
+          allure_results: allure-results
+          allure_report: allure-report
+          keep_reports: 5 
 
       
 
