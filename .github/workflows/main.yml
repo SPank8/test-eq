@@ -23,11 +23,9 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install allure-pytest
-
       - name: Run tests with Allure
         run: |
           pytest tests/ --alluredir=allure-results
-
       - name: Generate Allure report
         uses: simple-elf/allure-report-action@v1.7
         with:
@@ -36,11 +34,7 @@ jobs:
           keep_reports: 5
 
       - name: Upload Allure report as artifact
-<<<<<<< HEAD
-        uses: actions/upload-artifact@v3
-=======
         uses: actions/upload-artifact@v4   # <== вот это важно!
->>>>>>> 8ff1e96b65f88025e472cd08605b5577ac4b0889
         with:
           name: allure-report
           path: allure-report
