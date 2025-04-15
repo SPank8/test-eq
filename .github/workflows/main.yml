@@ -23,7 +23,10 @@ jobs:
         run: |
           pip install -r requirements.txt
           pip install allure-pytest
-      
+
+      - name: Run tests
+        run: |
+          pytest tests/
 
       - name: Run tests with Allure
         run: |
@@ -35,3 +38,6 @@ jobs:
           allure_results: allure-results
           allure_report: allure-report
           keep_reports: 5
+
+      
+      
